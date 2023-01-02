@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Skills from "./components/Skills";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import MyAvatar from "./components/MyAvatar";
+import Navbar from './components/Navbar';
+import Works from "./components/Works";
+import ScrollUp from "./utils/ScrollUp";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <Navbar />
+      </section>
+      <section>
+        <MyAvatar />
+      </section>
+      <section id='about'>
+        <About />
+      </section>
+      <section id='skills'>
+        <Skills />
+      </section>
+      <section id='works'>
+        <Works />
+      </section>
+      <section id='contact'>
+        <Contact />
+      </section>
+      <ScrollUp />
+    </>
   );
 }
 
