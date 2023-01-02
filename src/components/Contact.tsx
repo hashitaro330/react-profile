@@ -8,52 +8,8 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import Avatar from '@mui/material/Avatar'
 import { green, blue, purple } from '@mui/material/colors'
 
-// const themeStyles = styled(Theme)({
-//     root: {
-//     display: 'flex',
-//     '& > *': {
-//       margin: theme.spacing(1),
-//     },
-//   },
-//   green: {
-//     color: '#fff',
-//     backgroundColor: green[500],
-//   },
-//   blue: {
-//     color: theme.palette.getContrastText(blue[500]),
-//     backgroundColor: blue[500],
-//   },
-//   purple: {
-//     color: theme.palette.getContrastText(purple[500]),
-//     backgroundColor: purple[500],
-//   },
-// }) 
-
-
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: 'flex',
-//     '& > *': {
-//       margin: theme.spacing(1),
-//     },
-//   },
-//   green: {
-//     color: '#fff',
-//     backgroundColor: green[500],
-//   },
-//   blue: {
-//     color: theme.palette.getContrastText(blue[500]),
-//     backgroundColor: blue[500],
-//   },
-//   purple: {
-//     color: theme.palette.getContrastText(purple[500]),
-//     backgroundColor: purple[500],
-//   },
-// }));
 
 const Contact: React.FC = () => {
-//   const classes = useStyles();
 
   return (
     <>
@@ -65,17 +21,17 @@ const Contact: React.FC = () => {
         </Box>
         <Box display='flex' justifyContent='center' p={1}>
           <Link href='#' color='inherit'>
-            <Avatar sx={{color: '#fff', backgroundColor: green[500]}}>
+            <Avatar sx={{m: 1,color: '#fff', backgroundColor: green[500]}}>
               <MailIcon />
             </Avatar>
           </Link>
           <Link href='#' color='inherit'>
-            <Avatar sx={{backgroundColor: blue[500]}}>
+            <Avatar sx={{m: 1, backgroundColor: blue[500]}}>
               <TwitterIcon />
             </Avatar>
           </Link>
           <Link href='#' color='inherit'>
-            <Avatar sx={{backgroundColor: purple[500]}}>
+            <Avatar sx={{m: 1, backgroundColor: purple[500]}}>
               <GitHubIcon />
             </Avatar>
           </Link>
